@@ -135,7 +135,7 @@ body {
 
 ul {
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
 }
 
 address {
@@ -150,7 +150,7 @@ address {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 
 .link:hover,
@@ -237,7 +237,7 @@ address {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 
 .icon-envelope {
@@ -249,7 +249,6 @@ address {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 .link:hover .icon-envelope,
 .link:focus .icon-envelope,
@@ -303,7 +302,7 @@ address {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 .order-button:hover,
 .order-button:focus {
@@ -473,7 +472,7 @@ h4.section-title {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -523,7 +522,7 @@ h4.section-title {
   transition-property: color;
   transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0; }*/
+   }*/
 /* .portfolio-item .link {
   overflow: hidden;
   display: block;} */
@@ -551,7 +550,7 @@ h4.section-title {
   transition-property: bottom;
   transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 } */
 .kill {
   position: relative;
@@ -577,7 +576,7 @@ h4.section-title {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 .portfolio-item .link:hover .piece
 /* .link:focus .portfolio-item  */ {
@@ -607,7 +606,7 @@ h4.section-title {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 
 .social-media-item:not(:last-child) {
@@ -624,7 +623,7 @@ h4.section-title {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 
 .icon-client {
@@ -632,7 +631,7 @@ h4.section-title {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 .clients-link {
   width: 170px;
@@ -645,7 +644,7 @@ h4.section-title {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -725,7 +724,7 @@ h4.section-title {
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  
 }
 .backdrop.is-hidden {
   opacity: 0;
