@@ -789,6 +789,10 @@ h4.section-title {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-button:hover .close{
+    fill: var(--accent-color);
 }
 
 .modal-title {
@@ -805,6 +809,7 @@ h4.section-title {
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 12px;
+    position: relative;
    }
 
 .label-item {
@@ -814,7 +819,6 @@ h4.section-title {
     letter-spacing: 0.01em;
     padding-top: 10px;
     padding-bottom: 4px;
-    position: relative;
 }
 .check-item{
     display: block;
@@ -834,6 +838,12 @@ h4.section-title {
     padding-left: 12px;
 }
 
+.input-item:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+
+}
+
 .checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -849,16 +859,19 @@ h4.section-title {
 
 .icon-svg {
     position: absolute;
-    bottom: -29px;
-    left: 15px;
+    transform: translate(70%, -160%);
+}
+
+.input-item:focus + .icon-svg{
+    fill:var(--accent-color)
 }
 .checkbox-svg{
+    fill: var(--white);
     padding-top: 2px;
     margin-right: 8px;
     margin-bottom: -2px;
     border-radius: 3px;
     border: 2px solid var(--black);
-    border-radius: 2px;
 }
 
 .checkbox:checked + .checkbox-svg{
