@@ -791,6 +791,11 @@ h4.section-title {
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.close{
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-button:hover .close{
     fill: var(--accent-color);
 }
@@ -860,6 +865,9 @@ h4.section-title {
 .icon-svg {
     position: absolute;
     transform: translate(70%, -160%);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-item:focus + .icon-svg{
@@ -872,6 +880,7 @@ h4.section-title {
     margin-bottom: -2px;
     border-radius: 3px;
     border: 2px solid var(--black);
+
 }
 
 .checkbox:checked + .checkbox-svg{
@@ -891,4 +900,6 @@ h4.section-title {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-}
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
