@@ -271,11 +271,14 @@ address {
     margin-right: auto;
 }
 
+.hero .order-button {
+    margin-top: 30px;
+    margin-left: 248px;
+}
+
 .order-button {
     width: 200px;
     height: 50px;
-    margin-top: 30px;
-    margin-left: 248px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -558,13 +561,6 @@ h4.section-title {
 
 }
 
-.portfolio-item .link:hover .piece
-    /* .link:focus .portfolio-item  */
-{
-    transform: translateY(-100%);
-    /*  bottom: 106px; */
-}
-
 .item-box {
     padding-left: 24px;
     padding-right: 24px;
@@ -707,29 +703,20 @@ h4.section-title {
     -webkit-box-shadow: 0 0 0 1000px var(--dark-background-color) inset;
 }
 
-.subscribe-button {
-    width: 200px;
-    height: 50px;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    background-color: var(--accent-color);
-    border-width: 0;
-    border-radius: 4px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .sent-icon {
     fill: var(--white);
     vertical-align: middle;
     margin-left: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.order-button:hover .sent-icon,
+.order-button:focus .sent-icon {
+    fill: var(--accent-color)
+}
+
 
 .footer-media-title {
     display: inline-block;
@@ -818,30 +805,76 @@ h4.section-title {
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 12px;
+   }
 
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
-}
 .label-item {
     display: block;
     font-size: 12px;
-    line-height:1.16;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     padding-top: 10px;
+    padding-bottom: 4px;
+    position: relative;
 }
-.label-item textarea{
+.check-item{
+    display: block;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.field textarea {
     resize: none;
     margin-right: 0;
     height: 120px;
+    padding-top: 16px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    padding-left: 12px;
 }
-.label-item svg{
-    /*fill: var(--white);
-    background-color: var(--black);*/
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;}
+
+
+.field .order-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.icon-svg {
+    position: absolute;
+    bottom: -29px;
+    left: 15px;
+}
+.checkbox-svg{
+    padding-top: 2px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+    border-radius: 3px;
+    border: 2px solid var(--black);
+    border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-svg{
+    background-color: var(--accent-color);
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+.conditions-link{
+    color: var(--accent-color);
+}
+
 .input-item {
     display: block;
     height: 40px;
     width: 100%;
+    padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
