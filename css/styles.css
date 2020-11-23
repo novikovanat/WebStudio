@@ -694,6 +694,7 @@ h4.section-title {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: var(--white);
 }
 
 .email-subscribe:-webkit-autofill,
@@ -787,9 +788,9 @@ h4.section-title {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
 }
 .close{
     transition-property: fill;
