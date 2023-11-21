@@ -40,7 +40,7 @@
           </li>
         </ul>
       </nav>
-      <button class="burger-btn" type="button">
+      <button title="open menu" class="burger-btn" type="button" data-modal-open-menu>
         <svg class="burger-btn-icon" width="24" height="24">
           <use href="./images/icons.svg#burger"></use>
         </svg>
@@ -69,7 +69,7 @@
           effective solutions
           for your business
         </h1>
-        <button class="btn-order" type="button"> Order Service </button>
+        <button class="btn-order" type="button" data-modal-open> Order Service </button>
       </div>
     </section>
 
@@ -603,10 +603,10 @@
     </div>
   </footer>
   <!--BACKDROP  -->
-  <div class="backdrop is-hidden ">
+  <div class="backdrop is-hidden" data-modal>
     <!--  is-hidden -->
     <div class="modal">
-      <button class="modal-close-btn" type="button" aria-label="close modal button">
+      <button class="modal-close-btn" type="button" aria-label="close modal button" data-modal-close>
         <svg class="modal-close-btn-icon" width="8" height="8">
           <use href="./images/icons.svg#close"></use>
         </svg>
@@ -672,10 +672,10 @@
   <!--/BACKDROP  -->
 
   <!--MOBILE MENU  -->
-  <div class="mobile-menu">
+  <div class="mobile-menu" data-modal-menu>
     <!--is-open  -->
     <div class="container mobile-menu-container">
-      <button class="menu-close-btn" type="button">
+      <button title="close menu button" class="menu-close-btn" type="button" data-modal-close-menu>
         <svg class="menu-close-btn-icon" width="8" height="8">
           <use href="./images/icons.svg#close">
           </use>
@@ -740,7 +740,8 @@
   </div>
   </div>
   <!--/MOBILE MENU  -->
-
+  <script src="./modal.js"></script>
+  <script src="./menu.js"></script>
 </body>
 
 </html>
