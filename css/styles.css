@@ -990,7 +990,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
-    /* height: 436px; */
     max-width: 768px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
