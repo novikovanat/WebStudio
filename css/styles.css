@@ -20,6 +20,7 @@ ol {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 body {
@@ -185,10 +186,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
 @media screen and (max-width: 767px) {
   .feature-item-list:not(:last-child) {
     margin-bottom: 72px;
-  }
-
-  .portfolio-img {
-    height: auto;
   }
 }
 
@@ -815,8 +812,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
 .mob-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
-
-.mob-nav {}
 
 .mob-nav-list-link.studio-mob {
   color: #404bbf;
